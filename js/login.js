@@ -18,6 +18,23 @@ function handleLoginForm(e) {
 function paintingTitle(username) {
   title.innerText = `안녕! ${username}`;
   title.classList.remove(HIDDEN_CLASSNAME);
+  title.style.animation = "fadeIn 1.5s";
+  setTimeout(hideTitle, 1500);
+}
+
+function hideTitle() {
+  title.style.animation = "fadeOut 1.5s";
+  setTimeout(() => {
+    title.classList.add(HIDDEN_CLASSNAME);
+    showContent();
+  }, 1500);
+}
+
+function showContent() {
+  main.classList.remove("hidden");
+  article.classList.remove("hidden");
+  main.style.animation = "fadeIn 1.5s";
+  article.style.animation = "fadeIn 1.5s";
 }
 
 let savedUserName = localStorage.getItem(USERNAME_KEY);
@@ -28,9 +45,3 @@ if (savedUserName === null) {
 } else {
   paintingTitle(savedUserName);
 }
-
-// function mouse() {
-//   loginTitle.classList.remove(HIDDEN_CLASSNAME);
-// }
-
-// loginForm.addEventListener("mouseover", mouse);
