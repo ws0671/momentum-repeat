@@ -11,6 +11,11 @@ bgImg.style.top = 0;
 bgImg.style.left = 0;
 bgImg.style.zIndex = -1;
 
-if (savedUserName !== null) {
+function bgInsert() {
   document.body.appendChild(bgImg);
 }
+if (savedUserName) {
+  document.body.appendChild(bgImg);
+}
+
+loginForm.addEventListener("submit", bgInsert);
