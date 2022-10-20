@@ -1,3 +1,74 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap");
+
+body {
+  font-family: "Noto Serif KR", serif;
+}
 .hidden {
   display: none;
+}
+
+.login-form {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login-form__title {
+  color: transparent;
+  text-align: center;
+  font-size: 50px;
+  transition: all 1s ease-in-out;
+}
+.login-form:hover .login-form__title {
+  color: black;
+}
+.login-form__input {
+  width: 300px;
+  height: 50px;
+  font-size: 32px;
+  border: 0;
+  text-align: center;
+  visibility: hidden;
+  background: transparent;
+  animation: login-input-animation 2s ease-in-out forwards;
+}
+
+@keyframes login-input-animation {
+  from {
+    border-bottom: 1px white solid;
+    width: 0;
+  }
+  to {
+    border-bottom: 1px black solid;
+    visibility: visible;
+    width: 100%;
+  }
+}
+
+.login-form__input:focus {
+  outline: none;
+}
+
+#title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 65px;
+  animation: title-animation 1s ease-in-out forwards;
+}
+
+@keyframes title-animation {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: transparent;
+    visibility: hidden;
+  }
 }

@@ -1,3 +1,5 @@
+import API_KEY from "../api.js";
+
 const weather = document.querySelector("#weather span:first-child");
 const city = document.querySelector("#weather span:last-child");
 

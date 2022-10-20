@@ -8,15 +8,20 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input required minlength="3" type="text" />
-      <button>Login</button>
-    </form>
+    <div class="login-form">
+      <form id="login-form" class="hidden">
+        <h1 class="login-form__title">너의 이름은 ?</h1>
+        <input class="login-form__input" required minlength="3" type="text" />
+      </form>
+    </div>
+
     <h2 id="clock">00:00:00</h2>
     <h1 id="title" class="hidden"></h1>
+
     <form id="todo-form">
       <input type="text" placeholder="Write a To Do and Press Enter" required />
     </form>
+
     <ul id="todo-list"></ul>
     <div id="quote">
       <span></span>
@@ -31,7 +36,6 @@
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
-    <script src="js/weather.js"></script>
-    <script src="api.js"></script>
+    <script type="module" src="js/weather.js"></script>
   </body>
 </html>

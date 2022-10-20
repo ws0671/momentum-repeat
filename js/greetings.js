@@ -1,6 +1,7 @@
 const loginForm = document.getElementById("login-form");
 const loginInput = document.querySelector("#login-form > input");
 const title = document.getElementById("title");
+const loginTitle = document.querySelector(".login-form__title");
 
 // 같은 문자열을 두 번 이상 사용할 경우 변수로 만들어주면 좋음.
 const HIDDEN_CLASSNAME = "hidden";
@@ -15,7 +16,7 @@ function handleLoginForm(e) {
 }
 
 function paintingTitle(username) {
-  title.innerText = `Welcome ${username}`;
+  title.innerText = `안녕! ${username}`;
   title.classList.remove(HIDDEN_CLASSNAME);
 }
 
@@ -27,3 +28,9 @@ if (savedUserName === null) {
 } else {
   paintingTitle(savedUserName);
 }
+
+// function mouse() {
+//   loginTitle.classList.remove(HIDDEN_CLASSNAME);
+// }
+
+// loginForm.addEventListener("mouseover", mouse);
