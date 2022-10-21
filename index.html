@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9f59b2dab5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="login-form">
@@ -16,37 +20,52 @@
     </div>
     <h1 id="title" class="hidden"></h1>
 
-    <article class="article hidden"></article>
-
-    <main class="main hidden">
-      <!-- <h2 id="clock">00:00:00</h2> -->
-
-      <form id="todo-form">
-        <input
-          type="text"
-          placeholder="Write a To Do and Press Enter"
-          required
-        />
-      </form>
-      <div class="todo-list">
-        <ul id="todo-list"></ul>
-        <!-- <div id="quote">
+    <article class="article hidden">
+      <header class="article__header">
+        <div class="status-bar">
+          <div class="month">September</div>
+        </div>
+        <div class="article__content">
+          <h3 class="month-number">12</h3>
+          <span
+            >
+            <span class="day">Thursday</span>
+            <span id="clock">00:00:00</h2>
+          </span>
+        </div>
+        <div class="weather" id="weather">
           <span></span>
           <span></span>
         </div>
+      </header>
+
+      <div class="quote" id="quote">
+        <span></span>
+        <span></span>
       </div>
-      <div id="weather">
-        <span></span>
-        <span></span>
-      </div> -->
+    </article>
+
+    <main class="main hidden">
+      <header class="main__header">
+        <div>To-Do-List</div>
+      </header>
+
+      <div class="todo">
+        <form id="todo-form">
+          <input class="todo__input" type="text" required />
+        </form>
+        <div class="todo-list">
+          <ul id="todo-list"></ul>
+        </div>
+      </div>
     </main>
 
     <script src="js/content.js"></script>
     <script src="js/login.js"></script>
-    <!-- <script src="js/clock.js"></script> -->
-    <!-- <script src="js/quotes.js"></script> -->
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
-    <!-- <script type="module" src="js/weather.js"></script> -->
+    <script type="module" src="js/weather.js"></script>
   </body>
 </html>

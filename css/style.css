@@ -1,12 +1,13 @@
 @import "reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import "login.css";
 @import "content.css";
 
 body {
   font-family: "Noto Serif KR", serif;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
 }
@@ -28,5 +29,13 @@ body {
   }
   to {
     opacity: 0;
+  }
+}
+@keyframes fadeIn4 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.4;
   }
 }

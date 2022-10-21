@@ -48,10 +48,17 @@ const quotes = [
   },
 ];
 
+const sentences = [
+  {
+    sentence:
+      "그날, 별이 무수히 쏟아지던 날\n 그것은 마치 꿈 속 풍경처럼\n 그저 한 없이 아름다운 광경이었다",
+  },
+];
+
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 
-const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+const todaysQuote = sentences[Math.floor(Math.random() * sentences.length)];
 
-quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+quote.innerText = todaysQuote.sentence;
+// author.innerText = todaysQuote.author;

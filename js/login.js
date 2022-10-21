@@ -33,8 +33,8 @@ function hideTitle() {
 function showContent() {
   main.classList.remove("hidden");
   article.classList.remove("hidden");
-  main.style.animation = "fadeIn 1.5s";
-  article.style.animation = "fadeIn 1.5s";
+  main.style.animation = "fadeIn4 1.5s";
+  article.style.animation = "fadeIn4 1.5s";
 }
 
 let savedUserName = localStorage.getItem(USERNAME_KEY);
