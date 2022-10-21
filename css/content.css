@@ -55,6 +55,28 @@
   line-height: 23px;
   padding: 20px;
   text-align: center;
+  position: relative;
+  font-weight: 600;
+}
+
+.article .quote .fadeEffect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: #fff;
+  animation: showHide 5s ease-in-out forwards;
+}
+
+@keyframes showHide {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
 }
 
 .main {

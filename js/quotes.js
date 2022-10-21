@@ -53,12 +53,29 @@ const sentences = [
     sentence:
       "그날, 별이 무수히 쏟아지던 날\n 그것은 마치 꿈 속 풍경처럼\n 그저 한 없이 아름다운 광경이었다",
   },
+  {
+    sentence: "아침에 눈을 뜨면\n왠지 모르게 울고 있다",
+  },
+  {
+    sentence: "한가지는 분명해\n 우리는 만나면\n 바로 알아볼거야",
+  },
+  {
+    sentence: "꿈에서 깨어나도\n 절대 잊지 않도록\n 서로에게 이름을 써주자",
+  },
+  {
+    sentence:
+      "꿈을 꾸긴 했는데 매번 기억이 안 난다\n 계속해서 무언가를 누군가를 찾고 있다",
+  },
+  {
+    sentence:
+      "물이든, 쌀이든, 술이든 사람의 몸속으로 들어간 게 영혼과 매듭지어지는 것 또한 무스비",
+  },
 ];
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 
 const todaysQuote = sentences[Math.floor(Math.random() * sentences.length)];
-
+// const todaysQuote = sentences[5];
 quote.innerText = todaysQuote.sentence;
 // author.innerText = todaysQuote.author;
