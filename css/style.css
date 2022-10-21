@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import "login.css";
 @import "content.css";
+@import "logout.css";
+@import "todo.css";
 
 body {
   font-family: "Noto Serif KR", serif;

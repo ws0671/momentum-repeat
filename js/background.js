@@ -1,4 +1,15 @@
-const img = ["10.jpg", "11.png", "12.png", "13.png", "14.jpg"];
+const img = [
+  "6.png",
+  "7.png",
+  "8.png",
+  "9.png",
+  "10.jpg",
+  "11.png",
+  "12.png",
+  "13.png",
+  "14.jpg",
+  "15.png",
+];
 
 const todaysImg = img[Math.floor(Math.random() * img.length)];
 

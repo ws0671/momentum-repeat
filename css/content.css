@@ -6,6 +6,8 @@
   opacity: 0.4;
   font-family: "Montserrat", sans-serif;
   transition: all 0.5s ease-in-out;
+  position: relative;
+  /* padding-bottom: 20px; */
 }
 
 .article:hover {
@@ -52,9 +54,9 @@
 }
 
 .article .quote {
-  line-height: 23px;
+  line-height: 1.5;
   padding: 20px;
-  text-align: center;
+  /* text-align: center; */
   position: relative;
   font-weight: 600;
 }
@@ -95,39 +97,12 @@
   background-color: #d26467;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  padding: 10px;
-  height: 10%;
+  padding: 20px;
+  height: 6%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   color: #fff;
-}
-
-.main .todo {
-  padding: 20px;
-}
-
-.main .todo__input {
-  width: 100%;
-  /* border: 0; */
-  font-size: 24px;
-}
-
-.main .todo__input:focus {
-  outline: none;
-}
-
-.todo ul {
-  /* list-style: disc; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.todo ul li {
-  width: 90%;
-  padding: 8px 0;
-  border-bottom: 1px black solid;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  font-size: 21px;
+  font-weight: 600;
 }

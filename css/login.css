@@ -48,6 +48,8 @@
   transform: translate(-50%, -50%);
   color: white;
   font-size: 100px;
+  width: 100%;
+  text-align: center;
   /* animation: title-animation 1.5s ease-in-out forwards; */
   /* visibility: hidden; */
 }

@@ -51,24 +51,37 @@ const quotes = [
 const sentences = [
   {
     sentence:
-      "그날, 별이 무수히 쏟아지던 날\n 그것은 마치 꿈 속 풍경처럼\n 그저 한 없이 아름다운 광경이었다",
+      "그날, 별이 무수히 쏟아지던 날, 그것은 마치 꿈 속 풍경처럼 그저 한 없이 아름다운 광경이었다.",
   },
   {
-    sentence: "아침에 눈을 뜨면\n왠지 모르게 울고 있다",
+    sentence: "아침에 눈을 뜨면 왠지 모르게 울고 있다.",
   },
   {
-    sentence: "한가지는 분명해\n 우리는 만나면\n 바로 알아볼거야",
+    sentence: "한가지는 분명해. 우리는 만나면 바로 알아볼거야.",
   },
   {
-    sentence: "꿈에서 깨어나도\n 절대 잊지 않도록\n 서로에게 이름을 써주자",
-  },
-  {
-    sentence:
-      "꿈을 꾸긴 했는데 매번 기억이 안 난다\n 계속해서 무언가를 누군가를 찾고 있다",
+    sentence: "꿈에서 깨어나도 절대 잊지 않도록 서로에게 이름을 써주자.",
   },
   {
     sentence:
-      "물이든, 쌀이든, 술이든 사람의 몸속으로 들어간 게 영혼과 매듭지어지는 것 또한 무스비",
+      "꿈을 꾸긴 했는데 매번 기억이 안 난다 계속해서 무언가를, 누군가를 찾고 있다.",
+  },
+  {
+    sentence:
+      "실로 이어지는 것도 무스비. 사람과 이어지는 것도 무스비. 흘러가는 것도 무스비. 다 같은 말을 쓰지.",
+  },
+  {
+    sentence: "넌 누구야?",
+  },
+  {
+    sentence:
+      "어스레한 저녁, 낮도 밤도 아닌 시간, 세상의 윤곽이 흐려지고 신비한 존재를 만나는 기적의 황혼..!",
+  },
+  {
+    sentence: "너 지금, 꿈을 꾸고 있지?",
+  },
+  {
+    sentence: "소중한 사람, 잊으면 안되는 사람, 잊고 싶지 않았던 사람!",
   },
 ];
 
@@ -76,6 +89,6 @@ const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 
 const todaysQuote = sentences[Math.floor(Math.random() * sentences.length)];
-// const todaysQuote = sentences[5];
+// const todaysQuote = sentences[9];
 quote.innerText = todaysQuote.sentence;
 // author.innerText = todaysQuote.author;

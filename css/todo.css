@@ -1,0 +1,50 @@
+.main .todo {
+  padding: 20px;
+}
+
+.main .todo__input {
+  width: 100%;
+  border: 0;
+  font-size: 18px;
+}
+
+.main .todo__input:focus {
+  outline: none;
+}
+
+.todo ul {
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+}
+.todo ul li {
+  width: 90%;
+  padding: 8px 0;
+  border-bottom: 1px black solid;
+  position: relative;
+}
+
+.todo ul li i {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.todo ul li:hover i {
+  opacity: 1;
+}
+.todo ul li span {
+  word-break: break-all;
+}
+
+.todo ul li i:nth-child(2) {
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+}
+
+.todo ul li i:last-child {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
