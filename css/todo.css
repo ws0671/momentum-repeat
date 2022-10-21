@@ -6,6 +6,7 @@
   width: 100%;
   border: 0;
   font-size: 18px;
+  padding: 8px 10px;
 }
 
 .main .todo__input:focus {

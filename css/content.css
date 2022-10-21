@@ -51,6 +51,7 @@
 
 .article__header .weather span:first-child {
   margin-right: 10px;
+  text-transform: uppercase;
 }
 
 .article .quote {
@@ -89,6 +90,10 @@
   opacity: 0.4;
   font-family: "Montserrat", sans-serif;
   transition: all 0.5s ease-in-out;
+  overflow: auto;
+}
+.main::-webkit-scrollbar {
+  display: none;
 }
 .main:hover {
   opacity: 1;
@@ -105,4 +110,7 @@
   color: #fff;
   font-size: 21px;
   font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
