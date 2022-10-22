@@ -1,7 +1,6 @@
-import API_KEY from "../api.js";
-
 const weather = document.querySelector("#weather span:first-child");
 const city = document.querySelector("#weather span:last-child");
+const API_KEY = "f743257dc4cdc95b3db03fdea2558e93";
 
 function onGeoOk(position) {
   const lat = position.coords.latitude;
