@@ -87,8 +87,17 @@ const sentences = [
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
+const fadeEffect = document.querySelector(".fadeEffect");
 
-const todaysQuote = sentences[Math.floor(Math.random() * sentences.length)];
-// const todaysQuote = sentences[9];
-quote.innerText = todaysQuote.sentence;
-// author.innerText = todaysQuote.author;
+const sayBtn = document.querySelector(".change-sentence");
+function choiceSay() {
+  const todaysQuote = sentences[Math.floor(Math.random() * sentences.length)];
+  // const todaysQuote = sentences[9];
+  quote.innerText = todaysQuote.sentence;
+  // author.innerText = todaysQuote.author;
+  fadeEffect.classList.remove("effect");
+  void fadeEffect.offsetWidth;
+  fadeEffect.classList.add("effect");
+}
+choiceSay();
+sayBtn.addEventListener("click", choiceSay);

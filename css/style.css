@@ -5,6 +5,7 @@
 @import "content.css";
 @import "logout.css";
 @import "todo.css";
+@import "middle.css";
 
 body {
   font-family: "Noto Serif KR", serif;

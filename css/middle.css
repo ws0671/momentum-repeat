@@ -1,0 +1,47 @@
+.middle {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.ring {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* .ring:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+} */
+.middle img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.middle img:hover + .ring {
+  animation: ringAni 2s linear infinite;
+}
+
+@keyframes ringAni {
+  from {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px white;
+  }
+  to {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px white;
+  }
+}
