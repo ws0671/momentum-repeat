@@ -1,7 +1,9 @@
-const loginForm = document.getElementById("login-form");
+const loginForm = document.querySelector(".login-form");
 const loginInput = document.querySelector("#login-form > input");
 const title = document.getElementById("title");
 const loginTitle = document.querySelector(".login-form__title");
+const middle = document.querySelector(".middle");
+const middleImg = document.querySelectorAll(".middle img");
 
 // 같은 문자열을 두 번 이상 사용할 경우 변수로 만들어주면 좋음.
 const HIDDEN_CLASSNAME = "hidden";
@@ -33,8 +35,11 @@ function hideTitle() {
 function showContent() {
   main.classList.remove("hidden");
   article.classList.remove("hidden");
+  middle.classList.remove("hidden");
   main.style.animation = "fadeIn4 1.5s";
   article.style.animation = "fadeIn4 1.5s";
+  middleImg[0].style.animation = "fadeIn4 1.5s";
+  middleImg[1].style.animation = "fadeIn4 1.5s";
 }
 
 let savedUserName = localStorage.getItem(USERNAME_KEY);

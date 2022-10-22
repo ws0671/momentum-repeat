@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>your name</title>
+    <title>your name.</title>
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/9f59b2dab5.js"
@@ -12,9 +12,9 @@
     ></script>
   </head>
   <body>
-    <div class="login-form">
-      <form id="login-form" class="hidden">
-        <h1 class="login-form__title">너의 이름은 ?</h1>
+    <div class="login-form hidden">
+      <h1 class="login-form__title">너의 이름은 ?</h1>
+      <form id="login-form" >
         <input class="login-form__input" required minlength="3" maxlength='15' type="text" />
       </form>
     </div>
@@ -45,16 +45,27 @@
       <div class="logout"><i class="fa-solid fa-plug-circle-xmark fa-xl"></i></div>
 
     </article>
-<div class="middle">
-  <div>
-    <img class='man change-sentence' src="img/타키.jpg">
-    <div class="ring"></div>
+<div class="middle hidden">
+  <div class="message-row">
+    <div class="image-container">
+      <img class='man change-bg' src="img/타키.jpg">
+      <div class="ring"></div>
+    </div>
+    <span class="message-bubble message-bubble--upside">
+      배경을 바꿔줘!
+    </span>
   </div>
-  <img class='girl change-bg' src="img/미츠하.jpg">
-  <div class="ring"></div>
+
+  <div class="message-row">
+    <div class="image-container">
+      <img class='girl change-sentence' src="img/미츠하.jpg">
+      <div class="ring"></div>
+    </div>
+    <span class="message-bubble message-bubble--downside">
+      대사를 바꿔줘!
+    </span>
+  </div>
   
-  <!-- <button class="change-sentence">change sentence</button> -->
-  <!-- <button class="change-bg">change bg</button> -->
 </div>
 <main class="main hidden">
       <header class="main__header">

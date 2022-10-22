@@ -60,6 +60,9 @@
   /* text-align: center; */
   position: relative;
   /* font-weight: 600; */
+  /* font-family: "Nanum Gothic", sans-serif; */
+  font-size: 25px;
+  font-family: "Nanum Pen Script", cursive;
 }
 
 .effect {
@@ -88,7 +91,7 @@
   height: 700px;
   border-radius: 15px;
   opacity: 0.4;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nanum Pen Script", cursive;
   transition: all 0.5s ease-in-out;
   overflow: auto;
 }
@@ -108,7 +111,7 @@
   justify-content: center;
   align-items: flex-end;
   color: #fff;
-  font-size: 21px;
+  font-size: 35px;
   font-weight: 600;
   position: sticky;
   top: 0;
