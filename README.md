@@ -31,6 +31,7 @@
 - localstorage의 사용법
 - 랜덤 함수 만드는 법
 - weather api 사용법
+- 시간 및 실시간 날짜 표시
 - setInterval(), setTimeout()의 활용
 - todoList 만들기(할 일 삭제, 체크 기능)
 - css animation 구현 능력
