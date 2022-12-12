@@ -1,8 +1,7 @@
 # momentum-repeat 모멘텀 클론 코딩
 
 ## 개발 목표
-<strong>momentum</strong>을 클론 코딩합니다.
-추가 기능을 구현합니다.
+<strong>momentum</strong> 클론 코딩 및 추가 기능 구현.
 
 ## 사용기술
 <div>
