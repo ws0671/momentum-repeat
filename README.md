@@ -1,4 +1,4 @@
-# momentum-repeat 모멘텀 클론 코딩 복습
+# momentum-repeat 모멘텀 클론 코딩
 
 <strong>momentum</strong>을 클론 코딩합니다.
 
